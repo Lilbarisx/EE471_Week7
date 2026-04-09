@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Cat Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1>🐱 CatGenius AI</h1>
+            <p>Upload a photo of a cat to determine its breed using ResNet-50</p>
+        </header>
+
+        <main>
+            <div class="upload-area" id="uploadArea">
+                <input type="file" id="imageInput" accept="image/png, image/jpeg, image/jpg" hidden>
+                <label for="imageInput" class="upload-label">
+                    <div class="upload-icon">📁</div>
+                    <span>Drag & Drop an image here or click to browse</span>
+                </label>
+                <img id="imagePreview" class="hidden" alt="Preview">
+            </div>
+
+            <button id="classifyBtn" class="btn" disabled>
+                <span class="btn-text">Classify Cat</span>
+                <div class="loader hidden"></div>
+            </button>
+
+            <div id="resultArea" class="result-area hidden">
+                <h2>Prediction: <span id="primaryLabel" class="highlight"></span></h2>
+                <div class="confidence-bar-bg">
+                    <div id="confidenceBar" class="confidence-bar-fill"></div>
+                </div>
+                <p>Confidence: <span id="primaryConfidence"></span>%</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
