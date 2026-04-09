@@ -4,8 +4,8 @@ from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 # Cog API runs on port 5000 by default. Since we will run this separate container, 
-# we need to be able to contact the model container. We will use the model container name or localhost
-COG_URL = os.environ.get('COG_URL', 'http://localhost:5000/predictions')
+# we need to be able to contact the model container. On Windows/Docker Desktop, we use host.docker.internal
+COG_URL = os.environ.get('COG_URL', 'http://host.docker.internal:5000/predictions')
 
 @app.route('/')
 def index():
