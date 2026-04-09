@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 04c48be521423e74a291ecb67c897fc6b24eaf47 Baris <github.brstpz02@gmail.com> 1775127847 +0300	commit (initial): Initial commit
+04c48be521423e74a291ecb67c897fc6b24eaf47 0000000000000000000000000000000000000000 Baris <github.brstpz02@gmail.com> 1775127847 +0300	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 04c48be521423e74a291ecb67c897fc6b24eaf47 Baris <github.brstpz02@gmail.com> 1775127847 +0300	Branch: renamed refs/heads/master to refs/heads/main
+04c48be521423e74a291ecb67c897fc6b24eaf47 04c48be521423e74a291ecb67c897fc6b24eaf47 Baris <github.brstpz02@gmail.com> 1775127849 +0300	checkout: moving from main to text-to-speech
+04c48be521423e74a291ecb67c897fc6b24eaf47 99dff7929dbe6c51ff491021a5e9fab89d522d6a Baris <github.brstpz02@gmail.com> 1775128205 +0300	commit: Add Text-to-Speech feature and basic setup
+99dff7929dbe6c51ff491021a5e9fab89d522d6a 04c48be521423e74a291ecb67c897fc6b24eaf47 Baris <github.brstpz02@gmail.com> 1775128224 +0300	checkout: moving from text-to-speech to main
+04c48be521423e74a291ecb67c897fc6b24eaf47 99dff7929dbe6c51ff491021a5e9fab89d522d6a Baris <github.brstpz02@gmail.com> 1775128229 +0300	merge text-to-speech: Fast-forward
+99dff7929dbe6c51ff491021a5e9fab89d522d6a 99dff7929dbe6c51ff491021a5e9fab89d522d6a Baris <github.brstpz02@gmail.com> 1775128248 +0300	checkout: moving from main to speech-to-text
+99dff7929dbe6c51ff491021a5e9fab89d522d6a eda1bc05fab93fac1aa8b658588cfc02708ccb23 Baris <github.brstpz02@gmail.com> 1775128914 +0300	commit: Fix WAV format issue and complete STT
+eda1bc05fab93fac1aa8b658588cfc02708ccb23 99dff7929dbe6c51ff491021a5e9fab89d522d6a Baris <github.brstpz02@gmail.com> 1775128917 +0300	checkout: moving from speech-to-text to main
+99dff7929dbe6c51ff491021a5e9fab89d522d6a eda1bc05fab93fac1aa8b658588cfc02708ccb23 Baris <github.brstpz02@gmail.com> 1775128917 +0300	merge speech-to-text: Fast-forward
+eda1bc05fab93fac1aa8b658588cfc02708ccb23 305459491965d7dd735894d5586501fa9130fd56 Baris <github.brstpz02@gmail.com> 1775129142 +0300	commit: Resolve final merge conflicts and unify UI

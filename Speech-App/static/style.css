@@ -1,0 +1,253 @@
+:root {
+    --primary-color: #7251b5;
+    --primary-hover: #5d3f94;
+    --secondary-color: #f1f3f5;
+    --secondary-hover: #e9ecef;
+    --text-main: #333333;
+    --text-muted: #888888;
+    --bg-main: #ffffff;
+    --border-color: #e5e5e5;
+    --success-bg: #e8f5e9;
+    --success-text: #2e7d32;
+    --accent-blue: #339af0;
+    --accent-blue-hover: #228be6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: var(--bg-main);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 30px;
+    border: 2px solid var(--primary-color);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header h1 i {
+    color: #555;
+    transform: rotate(45deg);
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 5px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    display: block;
+    font-size: 14px;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    resize: none;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-primary {
+    flex: 2;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+    flex: 1;
+    background-color: var(--secondary-color);
+    color: var(--text-main);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-hover);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    background-color: var(--accent-blue);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.btn-block:hover {
+    background-color: var(--accent-blue-hover);
+}
+
+.status-message {
+    background-color: var(--success-bg);
+    color: var(--success-text);
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.audio-panel {
+    background-color: #f8f9fa;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.audio-panel h3 {
+    font-size: 14px;
+    color: var(--text-main);
+    margin-bottom: 15px;
+}
+
+audio {
+    width: 100%;
+    outline: none;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    color: var(--text-muted);
+    border-radius: 0;
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: -2px;
+}
+
+.audio-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.audio-controls button {
+    flex: 1;
+}
+
+.btn-danger {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #d32f2f;
+}
+
+.btn-danger:disabled {
+    background-color: #e57373;
+    cursor: not-allowed;
+}
+
+input[type="file"] {
+    font-size: 14px;
+    width: 100%;
+}
+
+.output-panel {
+    background-color: #e3f2fd;
+    border: 1px solid #bbdefb;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.output-panel label {
+    font-weight: bold;
+    color: #1565c0;
+}
+
+.output-panel textarea {
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+}
+
